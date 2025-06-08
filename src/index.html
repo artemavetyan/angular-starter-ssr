@@ -1,13 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MyApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>MyApp</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- theMarketer -->
+    <script>
+      (function () {
+        <!-- TODO: put the actual marketer_tracking_key -->
+        mktr_key = "2UWDQFZO";
+        var mktr = document.createElement("script");
+        mktr.async = true;
+        mktr.src = "https://t.themarketer.com/t/j/" + mktr_key;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mktr, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>
